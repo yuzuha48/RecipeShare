@@ -1,6 +1,6 @@
 # RecipeShare 🥘
 
-RecipeShare is a recipe sharing platform where people can search for recipes and post their own recipes. 
+RecipeShare is a platform for users to discover a wide array of recipes while also offering them the opportunity to contribute and share their own culinary creations. 
 
 Users can:
 - 🔍 search for a recipe
@@ -9,8 +9,8 @@ Users can:
 - ✏️ edit & delete recipes they created
 
 In this project I:
-- Employed Python and MySQL to handle back-end functionalities, including recipe and user CRUD operations
-- Utilized Flask and JavaScript to elevate user experience by implementing validation error notifications and enabling recipe search functionality
+- Implemented back-end functionalities, including recipe and user CRUD operations, using Python and MySQL 
+- Enhanced the user experience with Flask and JavaScript, incorporating validation error notifications and enabling recipe search functionality
 - Harnessed HTML, CSS, and Bootstrap to craft an adaptive front-end design
   
 <img width="1440" alt="all_recipes" src="https://github.com/yuzuha48/RecipeShare/assets/106595505/7e153f16-278e-4146-9340-abbe852466f2">
@@ -27,7 +27,7 @@ Ensure you have the following software installed on your machine:
 
 ## Getting Started 
 
-To get started with WanderGuide, follow these steps: 
+To get started with RecipeShare, follow these steps: 
 1. Clone this repository to your local machine:
    - git clone https://github.com/yuzuha48/RecipeShare
 2. Navigate to the project directory:
