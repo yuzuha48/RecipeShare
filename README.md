@@ -1,4 +1,4 @@
-# RecipeShare 🥘
+# Recipe Share 🥘
 
 RecipeShare is a platform for users to discover a wide array of recipes while also offering them the opportunity to contribute and share their own culinary creations. 
 
