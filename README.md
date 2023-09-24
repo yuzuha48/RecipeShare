@@ -14,9 +14,9 @@ In this project I:
 - Harnessed HTML, CSS, and Bootstrap to craft an adaptive front-end design
   
 <img width="1440" alt="all_recipes" src="https://github.com/yuzuha48/RecipeShare/assets/106595505/7e153f16-278e-4146-9340-abbe852466f2">
-<img width="1440" alt="create_recipe" src="https://github.com/yuzuha48/RecipeShare/assets/106595505/07d7b07e-f908-46a4-bc22-4aed36e583b1">
 <img width="1440" alt="recipe" src="https://github.com/yuzuha48/RecipeShare/assets/106595505/6cdee36c-b455-4d12-9d51-45deb87c1896">
 <img width="1440" alt="recipe_2" src="https://github.com/yuzuha48/RecipeShare/assets/106595505/2e1c9f2e-a591-4a70-a0bb-d25e674559a5">
+<img width="1440" alt="create_recipe" src="https://github.com/yuzuha48/RecipeShare/assets/106595505/07d7b07e-f908-46a4-bc22-4aed36e583b1">
 
 ## Prerequisites
 
