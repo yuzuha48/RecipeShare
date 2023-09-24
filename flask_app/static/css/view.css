@@ -1,0 +1,65 @@
+body {
+    padding: 20px;
+    width: 100%;
+    background-color: navajowhite;
+    color: sienna; 
+    font-size: 16.5px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    font-family: 'Liu Jian Mao Cao';
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+a {
+    color: sienna;
+}
+
+.back {
+    display: flex;
+    gap: 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo img {
+    width: 100%;
+    min-width: 450px;
+    max-width: 700px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.info {
+    width: 70%;
+    min-width: 450px;
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card {
+    width: 70%;
+    min-width: 450px;
+    max-width: 700px;
+    background-color: blanchedalmond;
+    color: sienna; 
+    border: 1px solid sienna;
+    margin-bottom: 10px;
+}
+
+.list {
+    white-space: pre-line;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Liu Jian Mao Cao' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/recipes.css')}}">
+    <script src="/static/js/script.js" async></script>
+    <title>Recipe Share</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome {{user.first_name}}!</h1>
+        <a href="/logout">Log Out</a>
+    </div>
+    <div class="content">
+        <div class="top">
+            <img src="/static/assets/food_sticker.png" alt="food_sticker" onclick="sendToPage()">
+            <div class="container mb-3">
+                <div class="container-body">
+                    <p class="search">Search for a recipe</p>
+                    <input type="text" class="form-control custom-input" id="searchInput" name="search" oninput="search()">
+                    <p>or</p>
+                    <a href="/recipes/new" class="btn mb-3">Create your own!</a>
+                </div>
+            </div>
+            <img src="/static/assets/food_sticker_2.png" alt="food_sticker" onclick="sendToPage()">
+        </div>
+        <h5>All posted recipes:</h5>
+        <div class="recipes">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Cook Time</th>
+                        <th>Posted By</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="all_recipes">
+                    {% for one_recipe in all_recipes %}
+                        <tr class="one_recipe">
+                            <td class="recipe_name">{{one_recipe.name}}</td>
+                            <td>{{one_recipe.cook_time}} min</td>
+                            <td>{{one_recipe.user.first_name}}</td>
+                            {% if user.id == one_recipe.user.id %}
+                                <td><a href="/recipes/{{one_recipe.id}}">View Recipe</a> | <a href="/recipes/edit/{{one_recipe.id}}">Edit</a> | <a href="/recipes/delete/{{one_recipe.id}}">Delete</a></td>
+                            {% else %}
+                                <td><a href="/recipes/{{one_recipe.id}}">View Recipe</a></td>
+                            {% endif %}
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

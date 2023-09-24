@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/create.css')}}">
+    <title>Recipe Share</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/recipes">Back to Recipes</a>
+        <a href="/logout">Log Out</a>
+    </div>
+    <div class="page">
+        <div class="content">
+            <h1>Edit Recipe</h1>
+            <form action="/recipes/edit/{{recipe.id}}" method="post" enctype="multipart/form-data">
+                {% with messages = get_flashed_messages(category_filter=['create']) %}
+                    {% if messages %}
+                        <div class="alert alert-danger" role="alert">
+                            {% for message in messages %}
+                                <p>{{message}}</p>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                {% endwith %}
+                <div class="container">
+                    <div class="container-left">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" value="{{recipe.name}}">
+                        </div>
+                        <div class="mb-3">
+                            <label for="photo" class="form-label">Photo:</label>
+                            <input class="form-control" type="file" id="photo" name="photo">
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description:</label>
+                            <textarea class="form-control" id="description" name="description" rows="4">{{recipe.description}}</textarea>
+                        </div>
+                        <div class="cook_time">
+                            <label for="cook_time" class="form-label">Cook Time (in minutes):</label>
+                            <input type="number" class="form-control" id="cook_time" name="cook_time" value="{{recipe.cook_time}}">
+                        </div>
+                    </div>
+                    <div class="container-right">
+                        <div class="mb-3">
+                            <label for="ingredients" class="form-label">Ingredients:</label>
+                            <textarea class="form-control" id="ingredients" name="ingredients" rows="6">{{recipe.ingredients}}</textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="instructions" class="form-label">Instructions:</label>
+                            <textarea class="form-control" id="instructions" name="instructions" rows="8">{{recipe.instructions}}</textarea>
+                        </div>
+                        <div class="submit">
+                            <button type="submit" class="btn btn-primary mb-3">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

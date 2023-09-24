@@ -1,0 +1,56 @@
+body {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: navajowhite;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+}  
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+} 
+
+h1 {
+    color: sienna;
+    font-family: 'Liu Jian Mao Cao';
+    font-size: 55px;
+}
+
+.register-card, .login-card {
+    color: sienna !important;
+    font-size: 16.5px;
+}
+
+.registration, .login {
+    font-family: 'Liu Jian Mao Cao';
+    font-size: 38px;
+}
+
+.register-card button, .login-card button {
+    background-color:sienna !important;
+    color: white;
+}
+
+.card {
+    width: 35%;
+    min-width: 250px;
+    max-width: 380px;
+    background-color: blanchedalmond !important; 
+    border: 1.5px solid sienna !important;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input {
+    border: 1px solid sienna !important;
+}
