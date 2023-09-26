@@ -9,9 +9,9 @@ Users can:
 - ✏️ edit & delete recipes they created
 
 In this project I:
-- Implemented back-end functionalities, including recipe and user CRUD operations, using Python and MySQL 
-- Enhanced user experience with Flask and JavaScript, incorporating validation error notifications and enabling recipe search functionality
-- Harnessed HTML, CSS, and Bootstrap to craft an adaptive front-end design
+- Improved usability with Flask and JavaScript, incorporating front-end validation, enabling recipe search functionality, and displaying personalized content and features for logged-in users
+- Configured Flask to handle file uploads and ensured secure storage of user-submitted content in designated server directories  
+- Utilized Python & MySQL for comprehensive data handling of user and recipe records
 
 <img width="1439" alt="login" src="https://github.com/yuzuha48/RecipeShare/assets/106595505/cf0fe0ae-a1a3-46ac-b318-e7c2b0493220">
 <img width="1440" alt="all_recipes" src="https://github.com/yuzuha48/RecipeShare/assets/106595505/7e153f16-278e-4146-9340-abbe852466f2">
